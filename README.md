@@ -1,8 +1,6 @@
 # pullrequestpractice
 
-류하준 바보
-git flow 복잡하네요.
-진영이 멍충이
+pullRequest 연습 및 git flow 연습입니다.
 
 ## from here wonjun jang
 - Wonjun Jang
