@@ -5,22 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="./js/app.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/app.js" defer></script>
   <title>날씨 날씨</title>
 </head>
 <!-- // body bg 진영 -->
+
 <body>
   <header>
     <h1 class="a11y-hidden">Momentum</h1>
   </header>
   <main>
-    <section class="search-bar">진영</section> 
+    <section class="search-bar">진영</section>
     <section class="weather">
-      <em class="temp"></em>
-      <span class="location white-space"></span>
+      <h2 class="a11y-hidden">날씨</h2>
+      <section class="daily-weather">
+        <h3 class="a11y-hidden">오늘 날씨</h3>
+        <img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/><em class="temp"></em>
+        <span class="location white-space"></span>
+      </section>
+      <section class="weather-modal">
+        <h3 class="a11y-hidden">주간 날씨</h3>
+        <!-- location class가 2개 잘 이용해보자 -->
+        <span class="location">Seoul</span>
+        <em class="weather-state">Clean</em>
+        <!-- weather-icon도 2개 -->
+        <img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/>
+        <hr>
+        <ol class="weekly-weather">
+          <li><time class="white-space" datetime="">THU</time><img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/><em class="temp temp-min">0°</em> / <em class="temp temp-max">7°</em></li>
+          <li><time class="white-space" datetime="">FRI</time><img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/><em class="temp temp-min">0°</em> / <em class="temp temp-max">7°</em></li>
+          <li><time class="white-space" datetime="">SAT</time><img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/><em class="temp temp-min">0°</em> / <em class="temp temp-max">7°</em></li>
+          <li><time class="white-space" datetime="">SUN</time><img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/><em class="temp temp-min">0°</em> / <em class="temp temp-max">7°</em></li>
+          <li><time class="white-space" datetime="">MON</time><img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/><em class="temp temp-min">0°</em> / <em class="temp temp-max">7°</em></li>
+          <li><time class="white-space" datetime="">TUE</time><img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/><em class="temp temp-min">0°</em> / <em class="temp temp-max">7°</em></li>
+          <li><time class="white-space" datetime="">WED</time><img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/><em class="temp temp-min">0°</em> / <em class="temp temp-max">7°</em></li>
+        </ol>
+        <span class="more-btn">•••</span>
+      </section>
     </section>
-    <section class="time">진영</section> 
-    <section class="main-todo">원준</section> 
+    <section class="time">진영</section>
+    <section class="main-todo">원준</section>
     <section class="sub-todo">원준</section>
   </main>
   <footer>

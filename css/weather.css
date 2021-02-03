@@ -2,15 +2,81 @@
   position: absolute;
   top: 15px;
   right: 15px;
+  color: #FFF;
+  text-align: right;
 }
 
-.temp {
+.daily-weather {
+  display: inline-block;
+  width: 110px;
+}
+
+.daily-weather * {
+  vertical-align: middle;
+}
+
+.daily-weather .weather-icon {
+  width: 26px;
+  height: 26px;
+  transform: scale(2);
+  margin-right: 3px;
+}
+
+.daily-weather .temp {
   font-size: 26px;
   font-weight: 700;
-  color: white;
 }
 
-.location {
+.daily-weather .location {
   font-size: 13px;
-  color: white;
+}
+
+/* 주간 날씨 */
+.weather-modal {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  padding: 20px;
+  width: 616px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.weather-modal > .weather-icon {
+  width: 58px;
+  height: 58px;
+}
+
+.weekly-weather {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.weekly-weather li * {
+  vertical-align: middle;
+}
+
+.weekly-weather li time {
+  font-size: 12px;
+}
+
+.weekly-weather li .weather-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.weekly-weather li .temp {
+  font-size: 13px;
+}
+
+.more-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
