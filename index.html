@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="./js/app.js" defer></script>
+  <script type="module" src="./js/app.js" defer></script>
   <title>날씨 날씨</title>
 </head>
 <!-- // body bg 진영 -->
@@ -31,6 +31,7 @@
         <em class="weather-state">Clean</em>
         <!-- weather-icon도 2개 -->
         <img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/>
+        <em class="modal-temp"></em>
         <hr>
         <ol class="weekly-weather">
           <li><time class="white-space" datetime="">THU</time><img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/><em class="temp temp-min">0°</em> / <em class="temp temp-max">7°</em></li>

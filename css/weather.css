@@ -38,7 +38,7 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   padding: 20px;
-  width: 616px;
+  width: 560px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
@@ -72,7 +72,7 @@
 }
 
 .weekly-weather li .temp {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .more-btn {
